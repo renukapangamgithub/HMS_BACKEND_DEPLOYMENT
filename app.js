@@ -15,7 +15,7 @@ config({ path: "./config/config.env" });
 
 app.use(
     cors({
-        origin: [process.env.FRONTEND_URL, process.env.DASHBOARD_URL],
+        origin: ['https://hospital-management-system-456.netlify.app', process.env.DASHBOARD_URL],
         methods:["GET", "POST", "PUT", "DELETE"],
         credentials: true,
     })
